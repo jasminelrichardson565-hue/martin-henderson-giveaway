@@ -1,0 +1,280 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgb(244, 244, 244);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 50;
+    background-color: white;
+}
+
+.img-logo {
+    border-radius: 20px;
+    width: 60px;
+}
+
+.bi-list {
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-top-list {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+@media(max-width: 700px) {
+    .bi-list {
+        font-size: 35px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .menu-top-list {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        display: none;
+    }
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+} 
+
+.first-container {
+    margin-top: 70px;
+    animation: move 2s linear;
+    padding: 30px 10px 120px;
+    background-image: url(../img/still-life-wireless-cyberpunk-headphones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.give-text {
+    margin: 40px 0px;
+    font-size: 40px;
+    text-decoration: overline;
+    text-shadow: 2px;
+}
+
+.u-text {
+    margin: 20px 0px;
+    color: white;
+}
+
+.grab-btn {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    background: linear-gradient(white, rgb(246, 20, 58));
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.win-text {
+    font-size: 18px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.gallery-container {
+    padding: 20px 10px;
+    background-color: white;
+}
+
+@keyframes gallery {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.gall-top {
+    text-align: center;
+    font-weight: bold;
+    animation: gallery 2s ease-out forwards;
+}
+
+.gallery-flex {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.img-gallery {
+    animation: move 2s linear;
+    width: 100%;
+}
+
+.about-section {
+    background-color: rgb(229, 229, 229);
+    padding: 20px 0px;
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.about-give {
+    padding: 0px 10px;
+}
+
+.about-top-text {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.about-celeb {
+    background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+    url('../img/images\ \(4\)\ 2.jpeg') center/cover no-repeat;
+    padding: 20px;
+    /*background-image: url(../img/images\ \(4\)\ 2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    width: 100%;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    font-size: 17px;
+}
+
+/*  */
+
+.menu-section {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    z-index: 90;
+    padding: 20px 20px 50px;
+    display: none;
+}
+
+.bi-x-lg {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.set {
+    margin-top: 30px;
+}
+
+.label-menu {
+    padding: 10px;
+    border-bottom: 0.5px solid black;
+    cursor: pointer;
+}
+
+.label-menu:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+/*  */
+
+.about-section2 {
+    padding: 10px;
+    background-color: white;
+}
+
+.about-first-text {
+    text-align: center;
+    margin: 20px 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.about-flex {
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text {
+      flex: 1 1 300px;
+    }
+
+    .about-text h2 {
+      font-size: 28px;
+      color: gold;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .rock-image {
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+
+    .rock-image img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text h2 {
+        font-size: 24px;
+      }
+
+      .rock-image {
+        order: -1;
+      }
+    }

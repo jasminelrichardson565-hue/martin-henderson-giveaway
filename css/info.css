@@ -1,0 +1,176 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Mulish", sans-serif;
+}
+
+.top-text {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+
+.item-view {
+    text-align: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 90%;
+    margin: 0px auto;
+    display: block;
+}
+
+img {
+    text-align: center;
+}
+
+.info-field {
+    margin: 40px auto;
+    display: block;
+    width: 90%;
+    text-align: left;
+}
+
+.label {
+    margin: 10px 0px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.get-btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    width: 70%;
+    color: white;
+    background-color: rgb(132, 14, 241);
+    cursor: pointer;
+}
+
+.get-btn:hover {
+    background-color: white;
+    border: 1px solid rgb(132, 14, 241);
+    color: rgb(132, 14, 241);
+}
+
+/*  */
+
+.warning-section {
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20%;
+    right: 20%;
+    bottom: 10px;
+    background-color: white;
+    display: none;
+}
+
+@media(max-width: 700px) {
+   .warning-section {
+        padding: 10px;
+        position: fixed;
+        top: 20px;
+        left: 0px;
+        right: 0px;
+        bottom: 10px;
+        background-color: white;
+        display: none;
+    } 
+}
+
+.warning-top {
+    text-align: center;
+    margin: 20px 0px 50px;
+}
+
+.get-btn2 {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    width: 70%;
+    color: white;
+    background-color: rgb(132, 14, 241);
+    cursor: pointer;
+}
+
+.get-btn2:hover {
+    background-color: white;
+    border: 1px solid rgb(132, 14, 241);
+    color: rgb(132, 14, 241);
+}
+
+.bi-x-lg {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.imp-note {
+    margin: 20px 20px;
+    color: red;
+}
+
+/*  */
+/*  */
+
+.details-section {
+    margin: 20px 0px;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.details-img {
+    width: 50%;
+}
+
+.about-card-section {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+@media(max-width: 700px) {
+    .details-img {
+        width: 100%;
+    }
+
+    .about-card-section {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+.card-name {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.about-flex {
+    display: flex;
+    align-items: top;
+    column-gap: 10px;
+}
+
+.bi-dot {
+    font-size: 25px;
+}
+
+.purchase-btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    width: 70%;
+    color: white;
+    background-color: rgb(132, 14, 241);
+    cursor: pointer;
+}
